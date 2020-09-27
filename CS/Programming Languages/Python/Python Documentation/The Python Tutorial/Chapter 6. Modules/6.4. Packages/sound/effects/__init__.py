@@ -1,0 +1,1 @@
+'''Subpackage for sound effects'''
