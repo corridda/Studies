@@ -31,7 +31,7 @@ def get_password(length: int, specials: bool = True, specials_customized: str = 
         if not specials_customized:
             puncts = choices(punctuation, k=len_puncts)
         else:
-            puncts = list(specials_customized)
+            puncts = choices(specials_customized, k=len_puncts)
     else:
         len_lowercase_letters = ceil(length * 0.5)
         len_uppercase_letters = ceil(length * 0.2)
