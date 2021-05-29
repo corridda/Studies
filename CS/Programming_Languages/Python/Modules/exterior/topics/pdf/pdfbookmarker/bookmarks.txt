@@ -1,48 +1,377 @@
-1. О документе.....3
-1.1 Назначение документа...............................................................................................................................................3
-1.2 На кого ориентирован данный документ ...........................................................................................................3
-1.3 Организация документа.............................................................................................................................................3
-1.4 Рекомендации по использованию документа ..................................................................................................3
-1.5 Соглашения по оформлению...................................................................................................................................3
-1.6 Авторские права, товарные знаки, ограничения .............................................................................................5
-1.7 Лицензионное соглашение.......................................................................................................................................6
-2. Основные понятия.....8
-2.1 Назначение .....................................................................................................................................................................8
-2.2 Термины и определения ...........................................................................................................................................8
-3. Общие сведения об электронных ключах.....9
-3.1 Приложения, апплеты и модели электронных ключей .................................................................................9
-3.2 Параметры электронных ключей при поставке............................................................................................ 11
-3.3 Информация о PIN-коде пользователя ............................................................................................................ 12
-4. Обзор пользовательского интерфейса.....13
-4.1 Запуск Единого Клиента JaCarta.......................................................................................................................... 13
-4.2 Меню быстрого запуска.......................................................................................................................................... 13
-4.3 Режимы работы программы.................................................................................................................................. 14
-4.3.1 Переключение между режимами................................................................................................................................ 14
-4.3.2 Основное окно в режиме пользователя................................................................................................................... 15
-4.3.3 Основное окно в режиме администратора............................................................................................................. 16
-4.4 Просмотр сведений о программе....................................................................................................................... 17
-4.5 Завершение работы программы ......................................................................................................................... 17
-5. Работа в программе в режиме пользователя.....18
-5.1 Просмотр информации об электронном ключе............................................................................................ 18
-5.2 Изменение метки (переименование) электронного ключа...................................................................... 19
-5.3 Изменение PIN-кода пользователя.................................................................................................................... 20
-5.4 Установка PIN-кода подписи ................................................................................................................................ 23
-5.5 Изменение PIN-кода подписи.............................................................................................................................. 25
-5.6 Разблокирование PIN-кода подписи................................................................................................................. 27
-6. Работа в программе в режиме администратора.....30
-6.1 Просмотр информации о приложениях на электронном ключе............................................................ 30
-6.2 Повторная инициализация датчика случайных чисел ............................................................................... 32
-6.3 Диагностика приложения....................................................................................................................................... 34
-6.4 Проверка целостности приложения .................................................................................................................. 35
-6.5 Операции с сертификатами в приложении электронного ключа.......................................................... 36
-6.5.1 Создание запроса на сертификат ............................................................................................................................... 36
-6.5.2 Импорт сертификата......................................................................................................................................................... 39
-6.5.3 Экспорт сертификата........................................................................................................................................................ 43
-6.5.4 Просмотр сертификата.................................................................................................................................................... 45
-6.6 Операции с объектами в приложении электронного ключа.................................................................... 46
-6.6.1 Просмотр списка объектов ............................................................................................................................................ 46
-6.6.2 Удаление объектов ........................................................................................................................................................... 49
-Приложение А. Обозначения электронных ключей.....50
-7. Контакты.....51
-7.1 Офис (общие вопросы)............................................................................................................................................ 51
-7.2 Техподдержка............................................................................................................................................................. 51
+п»їForeword ..... 16
+1 Scope ..... 17
+2 References ..... 17
+3 Definitions, symbols and abbreviations  ..... 21
+3.1 Definitions  .....  21
+3.2 Symbols  .....  23
+3.3 Abbreviations .....  24
+4 IP multimedia subsystem concepts  ..... 25
+4.0 General .....  25
+4.1 Relationship to CS domain and the IP-Connectivity Access Network  .....  27
+4.2 IMS services concepts  .....  27
+4.2.1 Home-network based services .....  27
+4.2.1.1 Support of CAMEL or IN .....  27
+4.2.1.2 Support of OSA  .....  27
+4.2.1.3 Dynamic services interactions handling  .....  27
+4.2.1.3.1 Service information exchanged between Application Servers .....  27
+4.2.1.3.2 Handling by the Application Server .....  27
+4.2.1.3.3 Deletion of services interaction information  .....  28
+4.2.2 Support of numbers in non-international format in the IMS  .....  28
+4.2.3 Support of roaming users  .....  29
+4.2.4 IP multimedia Subsystem Service Control Interface (ISC) .....  30
+4.2.4a HSS to service platform Interface  .....  33
+4.2.4b S-CSCF Service Control Model .....  34
+4.2.4c I-CSCF to AS reference point (Ma)  .....  35
+4.2.5 The QoS requirements for an IM CN subsystem session  .....  36
+4.2.6 QoS Requirements for IM CN subsystem signalling  .....  37
+4.2.7 Support of SIP forking  .....  38
+4.2.7.1 SIP Forking .....  38
+4.2.7.2 Forking within and outside the IM CN Subsystem .....  38
+4.2.7.3 Support for forked requests  .....  39
+4.3 Naming and addressing concepts .....  39
+4.3.1 Address management  .....  39
+4.3.2 Void .....  39
+4.3.3 Identification of users .....  39
+4.3.3.0 General  .....  39
+4.3.3.1 Private User Identities  .....  39
+4.3.3.2 Public User Identities .....  40
+4.3.3.2a Globally Routable User Agent URI (GRUU) .....  41
+4.3.3.2a.1 Architecture Requirements  .....  41
+4.3.3.2b Wildcarded Public User Identity  .....  42
+4.3.3.3 Routing of SIP signalling within the IP multimedia subsystem  .....  42
+4.3.3.3a Handling of dialled number formats .....  43
+4.3.3.3b Termination of session with the TEL URI format Public User Identity  .....  43
+4.3.3.4 Relationship of Private and Public User Identities  .....  43
+4.3.3.5 Relationship of Public User Identities, GRUUs, and UEs .....  44
+4.3.4 Identification of network nodes .....  45
+4.3.5 E.164 address to SIP URI resolution in an IM CN subsystem  .....  45
+4.3.5.1 ENUM/DNS translation mechanism  .....  45
+4.3.5.2 Handling of Tel URIs  .....  45
+4.3.5.3 Handling of SIP URIs representing a telephone number .....  46
+4.3.6 Public Service Identities .....  46
+4.4 Signalling concepts .....  46
+4.5 Mobility related concepts .....  47
+4.6 Roles of Session Control Functions .....  48
+4.6.0 General .....  48
+4.6.1 Proxy-CSCF  .....  48
+4.6.2 Interrogating-CSCF .....  49
+4.6.2.0 General  .....  49
+4.6.2.1 Void .....  49
+4.6.3 Serving-CSCF  .....  50
+4.6.4 Breakout Gateway Control Function .....  52
+4.6.5 Void .....  52
+4.7 Multimedia Resource Function .....  52
+4.7a Media Resource Broker  .....  54
+4.8 Security Concepts  .....  54
+4.9 Charging Concepts .....  54
+4.10 IMS group management concepts .....  54
+4.10.0 General .....  54
+4.10.1 IMS group administration  .....  54
+4.10.2 Group identifiers  .....  54
+4.11 Relationship to 3GPP Generic User Profile (GUP)  .....  54
+4.12 Network Address Translation traversal in access network  .....  55
+4.13 Identification of IMS communication Services  .....  55
+4.13.1 General .....  55
+4.13.2 Identification of IMS communication Services .....  55
+4.13.3 Identification of IMS applications .....  57
+4.14 Border Control concepts  .....  58
+4.15 IMS in transit network scenarios  .....  59
+4.15.1 General concepts  .....  59
+4.15.2 IMS transit network configurations .....  59
+4.15.3 Providing IMS application services in transit network scenarios .....  59
+4.15a Roaming Architecture for Voice over IMS with Local Breakout  .....  60
+4.15b Roaming Architecture for Voice over IMS with home routed traffic .....  61
+4.16 Support of multimedia telephony .....  61
+4.16.1 Telephony Application Server .....  61
+4.16.2 Identification of multimedia telephony .....  62
+4.16.3 Session setup principles  .....  62
+4.17 Support of short message service .....  62
+4.17.1 IP Short Message Gateway (IP-SM-GW)  .....  62
+4.18 Support of Number portability .....  62
+4.18.1 Number portability  .....  62
+4.19 Support of Preferred Circuit Carrier Access and Per Call Circuit Carrier Selection  .....  63
+4.19.1 Preferred Circuit Carrier Access and Per Call Circuit Carrier Selection .....  63
+4.20 Support of IMS Service Centralization and Continuity  .....  63
+4.21 Support of Overlap Signalling  .....  64
+4.22 Support of Explicit Congestion Notification (ECN) .....  64
+4.22.1 General .....  64
+4.22.2 CS GERAN/UTRAN Interworking at MGCF/IM-MGW  .....  64
+4.22.3 Interworking with non-ECN IP network and/or terminal at IBCF/TrGW .....  65
+4.22.4 Interworking with non-3GPP ECN IP terminal at IBCF/TrGW  .....  65
+4.22.5 ECN support at IMS-ALG/IMS-AGW  .....  66
+4.22.6 ECN support at MRFC/MRFP  .....  66
+4.22.7 CS GERAN/UTRAN Interworking at the MSC Server enhanced for ICS/MSC Server enhanced for SRVCC with SIP/CS-MGW  .....  66
+4.23 Support of Load Balancing  .....  67
+4.23.1 General .....  67
+4.23.2 Registration-based load balancing of S-CSCFs  .....  67
+4.23.3 Registration independent load balancing of Transit Functions  .....  67
+4.24 Support of Restoration Procedures  .....  67
+4.25 Support of Overload Control  .....  67
+4.25.1 General .....  67
+4.25.2 Next-hop monitoring of overload .....  68
+4.25.3 Filter based Overload Control  .....  68
+4.26 Support for Business Trunking  .....  68
+5 IP multimedia subsystem procedures ..... 69
+5.0 General .....  69
+5.0a Session-unrelated procedures .....  69
+5.1 CSCF related procedures  .....  69
+5.1.0 Establishing IP-Connectivity Access Network bearer for IM CN Subsystem Related Signalling  .....  69
+5.1.1 Procedures related to Proxy-CSCF discovery  .....  69
+5.1.1.0 General  .....  69
+5.1.1.1 DHCP/DNS procedure for P-CSCF discovery  .....  70
+5.1.1.2 Void .....  71
+5.1.2 Procedures related to Serving-CSCF assignment .....  71
+5.1.2.1 Assigning a Serving-CSCF for a user .....  71
+5.1.2.2 Cancelling the Serving-CSCF assignment .....  72
+5.1.2.3 Void .....  72
+5.1.3 Procedures related to Interrogating-CSCF  .....  72
+5.1.4 Procedures related to Proxy-CSCF .....  72
+5.1.5 Subscription Updating Procedures  .....  72
+5.1.5.0 General  .....  72
+5.1.5.1 Subscription updating information flow  .....  72
+5.2 Application level registration procedures  .....  73
+5.2.0 General .....  73
+5.2.1 Requirements considered for registration .....  73
+5.2.1a Implicit Registration .....  74
+5.2.1a.0 General  .....  74
+5.2.1a.1 Implicit Registration for UE without ISIM or IMC .....  75
+5.2.2 Registration flows  .....  76
+5.2.2.1 Requirements to consider for registration .....  76
+5.2.2.2 Assumptions  .....  76
+5.2.2.3 Registration information flow вЂ“ User not registered  .....  76
+5.2.2.4 Re-Registration information flow вЂ“ User currently registered  .....  78
+5.2.2.5 Stored information .....  80
+5.3 Application level de-registration procedures  .....  81
+5.3.1 Mobile initiated de-registration .....  81
+5.3.2 Network initiated de-registration .....  82
+5.3.2.0 General  .....  82
+5.3.2.1 Network Initiated Application (SIP) De-registration, Registration Timeout .....  83
+5.3.2.2 Network Initiated Application (SIP) De-registration, Administrative .....  83
+5.3.2.2.0 General .....  83
+5.3.2.2.1 Network Initiated De-registration by HSS, administrative  .....  84
+5.3.2.2.2 Network Initiated De-registration by Service Platform  .....  85
+5.4 Procedures for IP multi-media sessions  .....  86
+5.4.0 General .....  86
+5.4.1 Bearer interworking concepts .....  86
+5.4.2 Interworking with Internet  .....  86
+5.4.2a IP version interworking .....  86
+5.4.3 Interworking with PSTN  .....  87
+5.4.4 Requirements for IP multi-media session control  .....  88
+5.4.5 Session Path Information  .....  89
+5.4.5.1 Session Path Information during Registration and Session Initiation .....  89
+5.4.5.2 P-CSCF in the Session Path .....  89
+5.4.5.3 S-CSCF in the Session Path .....  89
+5.4.6 End-user preferences and terminal capabilities  .....  89
+5.4.6.0 General  .....  89
+5.4.6.1 Objectives .....  89
+5.4.6.2 End-user expectations .....  90
+5.4.6.3 Mechanism for bearer establishment  .....  90
+5.4.6.4 Session progress indication to the originating UE .....  92
+5.4.7 Interaction between QoS and session signalling  .....  92
+5.4.7.0 General  .....  92
+5.4.7.1 Authorize QoS Resources .....  93
+5.4.7.1a Resource Reservation with Policy and Charging Control  .....  93
+5.4.7.2 Enabling of Media Flows  .....  94
+5.4.7.3 Disabling of Media Flows  .....  94
+5.4.7.4 Revoke Authorization for IP-Connectivity Access Network and IP Resources  .....  94
+5.4.7.5 Indication of IP-Connectivity Access Network bearer release  .....  94
+5.4.7.6 Authorization of IP-Connectivity Access Network bearer modification  .....  94
+5.4.7.7 Indication of IP-Connectivity Access Network bearer modification .....  95
+5.4.7.8 Sharing of Resources for Network Detected Concurrent Sessions .....  95
+5.4.7.8.1 Network Detected Concurrent Sessions .....  95
+5.4.7.8.2 Initiating Resource Sharing for Network Detected Concurrent Sessions .....  95
+5.4.7.8.3 Void .....  96
+5.4.7.9 Priority sharing for concurrent sessions .....  96
+5.4.8 QoS-Assured Preconditions  .....  96
+5.4.9 Event and information distribution .....  97
+5.4.9.0 General  .....  97
+5.4.9.1 Subscription to event notifications  .....  98
+5.4.10 Void .....  100
+5.4.11 Signalling Transport Interworking  .....  100
+5.4.12 Configuration and Routing principles for Public Service Identities .....  100
+5.4.12.0 General  .....  100
+5.4.12.1 PSIs on the originating side  .....  100
+5.4.12.2 PSIs on the terminating side  .....  100
+5.4.12.3 Subdomain based PSIs .....  101
+5.4.12.4 PSI configuration in the HSS .....  101
+5.4.12.5 Requests originated by the AS hosting the PSI  .....  101
+5.4.13 Transcoding concepts .....  102
+5.4a Overview of session flow procedures  .....  102
+5.4a.1 End-to-End session flow procedures .....  102
+5.4a.2 Transit network session flow procedures  .....  105
+5.5 Serving-CSCF/MGCF to serving-CSCF/MGCF procedures .....  107
+5.5.0 General .....  107
+5.5.1 (S-S#1) Different network operators performing origination and termination .....  107
+5.5.2 (S-S#2) Single network operator performing origination and termination .....  109
+5.5.3 (S-S#3) Session origination with PSTN termination in the same network as the S-CSCF.  .....  112
+5.5.4 (S-S#4) Session origination with PSTN termination in a different network from the S-CSCF.  .....  114
+5.6 Origination procedures  .....  116
+5.6.0 General .....  116
+5.6.1 (MO#1) Mobile origination, roaming  .....  116
+5.6.2 (MO#2) Mobile origination, home .....  119
+5.6.3 (PSTN-O) PSTN origination .....  121
+5.6.4 (NI-O) Non-IMS Origination procedure from an external SIP client  .....  122
+5.6.5 Application Server Origination Procedure  .....  124
+5.6.5.1 (AS-O) Origination at Application Server .....  124
+5.6.5.2 Void .....  126
+5.6.5.3 S-CSCF selection by I-CSCF for AS Originating call procedures  .....  126
+5.7 Termination procedures  .....  128
+5.7.0 General .....  128
+5.7.1 (MT#1) Mobile termination, roaming  .....  128
+5.7.2 (MT#2) Mobile termination, home  .....  131
+5.7.2a (MT#3) Mobile termination, CS Domain roaming  .....  133
+5.7.3 (PSTN-T) PSTN termination  .....  133
+5.7.4 (NI-T) Non-IMS Termination to an external SIP client  .....  135
+5.7.5 (AS-T#1) PSI based Application Server termination вЂ“ direct .....  137
+5.7.6 (AS-T#2) PSI based Application Server termination вЂ“ indirect .....  137
+5.7.7 (AS-T#3) PSI based Application Server termination вЂ“ DNS routing .....  138
+5.7.8 (AST#4) Termination at Application Server based on service logic .....  139
+5.7a Procedures for the establishment of sessions without preconditions  .....  140
+5.7a.1 General .....  140
+5.7a.2 Procedures for the establishment of sessions without preconditions - no resource reservation required before session becomes active  .....  142
+5.7a.3 Void .....  144
+5.8 Procedures related to routing information interrogation  .....  144
+5.8.0 General .....  144
+5.8.1 User identity to HSS resolution .....  144
+5.8.2 SLF on register .....  145
+5.8.3 SLF on UE invite  .....  146
+5.8.4 SLF on AS access to HSS  .....  147
+5.9 Routing of mid-session signalling  .....  147
+5.10 Session release procedures .....  148
+5.10.0 General .....  148
+5.10.1 Terminal initiated session release .....  148
+5.10.2 PSTN initiated session release  .....  150
+5.10.3 Network initiated session release  .....  151
+5.10.3.0 Removal of IP-CAN bearer used to transport IMS SIP signalling  .....  151
+5.10.3.1 Network initiated session release - P-CSCF initiated  .....  151
+5.10.3.1.0 General .....  151
+5.10.3.1.1 Network initiated session release - P-CSCF initiated вЂ“ after removal of IP-Connectivity Access Network bearer  .....  152
+5.10.3.1.2 Void  .....  153
+5.10.3.2 Network initiated session release - S-CSCF Initiated .....  153
+5.11 Procedures to enable enhanced multimedia services  .....  154
+5.11.1 Session Hold and Resume Procedures  .....  154
+5.11.1.0 General  .....  154
+5.11.1.1 Mobile-to-Mobile Session Hold and Resume Procedures  .....  154
+5.11.1.2 Mobile-initiated Hold and Resume of a Mobile-PSTN Session  .....  156
+5.11.1.3 PSTN-initiated Hold and Resume of a Mobile-PSTN Session .....  158
+5.11.2 Procedures for anonymous session establishment .....  160
+5.11.2.0 General  .....  160
+5.11.2.1 Signalling requirements for anonymous session establishment .....  160
+5.11.2.2 Bearer path requirements for anonymous session establishment .....  160
+5.11.3 Procedures for codec and media characteristics flow negotiations  .....  160
+5.11.3.0 General  .....  160
+5.11.3.1 Codec and media characteristics flow negotiation during initial session establishment .....  161
+5.11.3.2 Codec or media characteristics flow change within the existing reservation  .....  164
+5.11.3.3 Codec or media characteristics flow change requiring new resources and/or authorization  .....  165
+5.11.3.4 Sample MM session flow - addition of another media  .....  168
+5.11.4 Procedures for providing or blocking identity .....  171
+5.11.4.0 General  .....  171
+5.11.4.1 Procedures for providing the authenticated identity of the originating party  .....  171
+5.11.4.2 Procedures for blocking the identity of the originating party  .....  173
+5.11.4.3 Procedures for providing the authenticated identity of the originating party (PSTN origination) .....  174
+5.11.4.4 Procedures for providing the authenticated identity of the originating party (PSTN termination) .....  174
+5.11.5 Session Redirection Procedures  .....  174
+5.11.5.0 General  .....  174
+5.11.5.1 Session Redirection initiated by S-CSCF to IMS  .....  174
+5.11.5.2 Session Redirection to PSTN Termination (S-CSCF #2 forwards INVITE) .....  175
+5.11.5.2a Session Redirection to PSTN Termination (REDIRECT to originating UE#1)  .....  176
+5.11.5.3 Session Redirection initiated by S-CSCF to general endpoint (REDIRECT to originating UE#1) .....  178
+5.11.5.4 Session Redirection initiated by P-CSCF  .....  179
+5.11.5.5 Session Redirection initiated by UE  .....  180
+5.11.5.6 Session Redirection initiated by originating UE#1 after Bearer Establishment (REDIRECT to originating UE#1) .....  181
+5.11.6 Session Transfer Procedures  .....  182
+5.11.6.0 General  .....  182
+5.11.6.1 Refer operation  .....  182
+5.11.6.2 Application to Session Transfer Services  .....  184
+5.11.6.2.0 General .....  184
+5.11.6.2.1 Blind Transfer and Assured Transfer .....  184
+5.11.6.2.2 Consultative Transfer .....  185
+5.11.6.2.3 Three-way Session .....  185
+5.12 Mobile Terminating call procedures to unregistered Public User Identities .....  186
+5.12.0 General .....  186
+5.12.1 Mobile Terminating call procedures to unregistered Public User Identity that has services related to unregistered state .....  186
+5.12.2 Mobile Terminating call procedures to unregistered Public User Identity that has no services related to unregistered state .....  188
+5.13 IMS Emergency Sessions  .....  188
+5.14 Interactions involving the MRFC/MRFP .....  188
+5.14.0 General .....  188
+5.14.1 Interactions between the UE and the MRFC  .....  188
+5.14.2 Service control based interactions between the MRFC and the AS  .....  189
+5.14.3 Interactions for services using both the Ut interface and MRFC capabilities  .....  189
+5.14.4 Transcoding services involving the MRFC/MRFP  .....  189
+5.15 Mobile Terminating session procedure for unknown user .....  190
+5.15.0 General .....  190
+5.15.1 Unknown user determined in the HSS.  .....  190
+5.15.2 Unknown user determined in the SLF .....  191
+5.16 IMS messaging concepts and procedures  .....  191
+5.16.0 General .....  191
+5.16.1 Immediate Messaging  .....  191
+5.16.1.0 General  .....  191
+5.16.1.1 Procedures to enable Immediate Messaging .....  192
+5.16.1.1.0 General .....  192
+5.16.1.1.1 Immediate messaging procedure to registered Public User Identity  .....  192
+5.16.1.1.2 Immediate messaging procedure to unregistered Public User Identity  .....  193
+5.16.1.2 Immediate messages with multiple recipients  .....  194
+5.16.2 Session-based Messaging .....  194
+5.16.2.0 General  .....  194
+5.16.2.1 Architectural principles  .....  194
+5.16.2.2 Procedures to enable Session based Messaging  .....  195
+5.16.2.2.0 General .....  195
+5.16.2.2.1 Session based messaging procedure to registered Public User Identity .....  195
+5.16.2.2.2 Session based messaging procedure using multiple UEs .....  196
+5.16.2.2.3 Session based messaging procedure with an intermediate node  .....  199
+5.16.2.2.4 Session based messaging release procedure .....  200
+5.16.2.2.5 Session based messaging release procedure with an intermediate node  .....  201
+5.17 Refreshing sessions .....  201
+5.18 Void  .....  202
+5.19 Support for Transit scenarios in IMS .....  202
+5.19.1 General .....  202
+5.19.2 Providing IMS application services in transit network scenarios .....  205
+5.20 Procedures for Assigning, Using, and Processing GRUUs .....  205
+5.20.1 UE  .....  205
+5.20.1.1 Obtaining a GRUU during registration .....  205
+5.20.1.2 Using a GRUU  .....  206
+5.20.1.3 Using a GRUU while requesting Privacy .....  206
+5.20.2 Serving-CSCF  .....  206
+5.20.2.1 Allocating a GRUU during registration .....  206
+5.20.2.2 Using a GRUU  .....  206
+5.20.3 Interrogating-CSCF .....  207
+5.20.3a HSS  .....  207
+5.20.4 Elements other than UE acting as a UA  .....  207
+5.20.4.1 Using a GRUU  .....  207
+5.20.4.2 Assigning a GRUU .....  207
+5.21 IMS Multimedia Priority Services Procedures  .....  207
+5.22 Support of Overload Control  .....  208
+5.22.1 Next-hop monitoring of overload .....  208
+5.22.2 Filter based Overload Control  .....  209
+Annex A (informative): Information flow template  ..... 211
+Annex B (informative): Void .......... 213
+Annex C (informative): Void .......... 214
+Annex D (informative): Void .......... 215
+Annex E (normative): IP-Connectivity Access Network specific concepts when using GPRS and/or EPS to access IMS ..... 216
+E.0 General  ..... 216
+E.1 Mobility related concepts ..... 216
+E.1.0 General .....  216
+E.1.1 Procedures for P-CSCF discovery  .....  217
+E.1.1.0 General .....  217
+E.1.1.1 GPRS/EPS procedure for P-CSCF discovery .....  217
+E.1.2 Support for Enhanced Coverage for data centric UEs  .....  218
+E.2 QoS related concepts ..... 219
+E.2.1 Application Level Signalling for IMS  .....  219
+E.2.1.0 General .....  219
+E.2.1.1 QoS Requirements for Application Level Signalling .....  219
+E.2.1.2 Requirements for IM CN subsystem signalling flag  .....  219
+E.2.1.3 Application Level Signalling support for IMS services  .....  220
+E.2.1a PDP context/EPS Bearer procedures for IMS .....  220
+E.2.1a.1 Establishing PDP Context/EPS bearer for IM CN Subsystem Related Signalling .....  220
+E.2.1a.2 Deletion of PDP Context/EPS bearer used to transport IMS SIP signalling  .....  221
+E.2.2 The QoS requirements for an IM CN subsystem session .....  222
+E.2.2.0 General .....  222
+E.2.2.1 Relation of IMS media components and PDP contexts/EPS bearers carrying IMS media  .....  223
+E.2.3 Interaction between GPRS/EPS QoS and session signalling  .....  223
+E.2.3.0 General .....  223
+E.2.3.1 Resource Reservation with Policy and Charging Control  .....  223
+E.2.4 Network initiated session release - P-CSCF initiated  .....  224
+E.2.4.0 General .....  224
+E.2.4.1 Network initiated session release - P-CSCF initiated after loss of radio coverage  .....  224
+E.3 Address and identity management concepts  ..... 225
+E.3.1 Deriving IMS identifiers from the USIM  .....  225
