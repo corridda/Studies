@@ -15,12 +15,13 @@ try:
     img = Image.open(filename)
     print("Размер изображения:")
     print(img.format, img.size, img.mode)
+
     for size in [size_1, size_2]:
-        saved = None
-        if size == (32, 32):
-            saved = "Beeline_logo_32x32.jpg"
-        else:
-            saved = "Beeline_logo_16x16.jpg"
+        match size:
+            case (32, 32):
+                saved = "Beeline_logo_32x32.jpg"
+            case _:
+                saved = "Beeline_logo_16x16.jpg"
         img.thumbnail(size)
         img.save(saved)
         img.show()
