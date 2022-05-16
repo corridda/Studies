@@ -14,6 +14,10 @@ with dpg.window(label="Tutorial", pos=(320, 50), width=275, height=225) as win2:
     dpg.add_input_text(default_value="some text")
     dpg.add_input_int()
 
+# with dpg.window(label="Tutorial", modal=True, pos=(520, 50), width=275, height=225) as win2:
+#     dpg.add_input_text(default_value="some text")
+#     dpg.add_input_int()
+
 with dpg.theme() as global_theme:
     with dpg.theme_component(dpg.mvAll):
         dpg.add_theme_color(dpg.mvThemeCol_FrameBg, (255, 140, 23), category=dpg.mvThemeCat_Core)

@@ -13,6 +13,7 @@ with dpg.window(label="Delete Files", modal=True, show=False, id="modal_id", no_
 with dpg.window(label="Tutorial"):
     dpg.add_button(label="Open Dialog", callback=lambda: dpg.configure_item("modal_id", show=True))
 
+
 dpg.create_viewport(title='Custom Title', width=800, height=600)
 dpg.setup_dearpygui()
 dpg.show_viewport()
