@@ -6,7 +6,7 @@ def create_shift_substitutions(n):
     alphabet_size = len(string.ascii_uppercase)
     for i in range(alphabet_size):
         letter       = string.ascii_uppercase[i]
-        subst_letter = string.ascii_uppercase[(i+n)%alphabet_size]
+        subst_letter = string.ascii_uppercase[(i+n) % alphabet_size]
 
         encoding[letter]       = subst_letter
         decoding[subst_letter] = letter
@@ -110,7 +110,7 @@ if __name__ == "__main__":
                 encoding, decoding = create_shift_substitutions(n)
 
         elif choice == '5':
-            print("Terminaing. This program will self destruct in 5 seconds.\n")
+            print("Terminating. This program will self destruct in 5 seconds.\n")
             break
 
         else:

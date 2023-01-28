@@ -1,11 +1,14 @@
 import dearpygui.dearpygui as dpg
 
+from pprint import pprint
+
 dpg.create_context()
 
 
 def callback(sender, app_data):
     print("Sender: ", sender)
-    print("App Data: ", app_data)
+    print("App Data:")
+    pprint(app_data)
 
 
 dpg.add_file_dialog(directory_selector=True, show=False, callback=callback, tag="file_dialog_id")
