@@ -1,0 +1,1 @@
+cargo run -- the "c:\Users\Igor\fleet\Rust\minigrep\src\poem.txt"
