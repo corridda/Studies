@@ -3,7 +3,7 @@
 
 """Open file and return a corresponding file object. If the file cannot be opened, an OSError is raised."""
 
-# Example 1: How to open a file in Python?
+# Example 1: How to open a file in python?
 # opens test.text file of the current directory
 with open("test.txt") as f:
     print(f"{f.read()}")
@@ -33,7 +33,7 @@ with open("c:/Users/Игорь/PycharmProjects/Books/Documentation/"
           "The_Python_Standard_Library/2. Built-in Functions/o-r/test3.txt", mode = 'a') as f:
     f.write("new string\n")
 
-"""Python has a encoding system which is platform dependent.
+"""python has a encoding system which is platform dependent.
 Hence, it's recommended to specify the encoding type if you are working in a text mode."""
 with open("c:/Users/Игорь/PycharmProjects/Books/Documentation/"
           "The_Python_Standard_Library/2. Built-in Functions/o-r/test2.txt", mode='r', encoding='utf-8') as f:

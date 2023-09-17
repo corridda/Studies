@@ -3,9 +3,9 @@
 
 """Rather than being a function, list is actually a mutable sequence type, as documented in Lists
 and Sequence Types — list, tuple, range.
-The list() constructor creates a list in Python.
+The list() constructor creates a list in python.
 
-Python list() constructor takes a single argument:
+python list() constructor takes a single argument:
 iterable (Optional) - an object that could be a sequence (string, tuples) or collection (set, dictionary)
 or iterator object.
 

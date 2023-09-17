@@ -2,7 +2,7 @@
 # https://www.programiz.com/python-programming/methods/built-in/hex
 
 """Convert an integer number to a lowercase hexadecimal string prefixed with “0x”.
-If x is not a Python int object, it has to define an __index__() method that returns an integer."""
+If x is not a python int object, it has to define an __index__() method that returns an integer."""
 print(f"hex(255): {hex(255)}")
 print(f"hex(-42): {hex(-42)}")
 print(f'{255:#x}', f'{255:#X}', f'{255:x}', f'{255:X}\n')

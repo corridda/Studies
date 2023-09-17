@@ -46,7 +46,7 @@ def main():
     print(f"all(s): {all(s)}\n")
 
 
-    # How all() works with Python dictionaries?
+    # How all() works with python dictionaries?
     """In case of dictionaries, if all keys (not values) are true or the dictionary is empty,
     all() returns True. Else, it returns false for all other cases.."""
     d = {0: 'False', 1: 'False'}

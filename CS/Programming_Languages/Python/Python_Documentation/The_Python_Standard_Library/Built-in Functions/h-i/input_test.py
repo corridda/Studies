@@ -5,7 +5,7 @@
 The function then reads a line from input, converts it to a string (stripping a trailing newline), 
 and returns that. When EOF is read, EOFError is raised."""
 
-s = input('--> ') # Monty Python's Flying Circus
+s = input('--> ') # Monty python's Flying Circus
 print(s)
 
 """If the readline module was loaded, then input() will use it

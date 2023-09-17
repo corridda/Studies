@@ -8,7 +8,7 @@ If the second argument is omitted, the super object returned is unbound. If the 
 isinstance(obj, type) must be true. If the second argument is a type, issubclass(type2, type)
 must be true (this is useful for classmethods).
 
-In Python, super() built-in has two major use cases:
+In python, super() built-in has two major use cases:
 * Allows us to avoid using base class explicitly
 * Working with Multiple Inheritance"""
 
@@ -109,7 +109,7 @@ You can view the MRO by using __mro__ attribute.
 <class 'Mammal'>, 
 <class 'Animal'>, 
 <class 'object'>)
-Here is how MRO is calculated in Python:
+Here is how MRO is calculated in python:
 
 A method in the derived calls is always called before the method of the base class.
 In our example, Dog class is called before NonMarineMammal or NoneWingedMammal.

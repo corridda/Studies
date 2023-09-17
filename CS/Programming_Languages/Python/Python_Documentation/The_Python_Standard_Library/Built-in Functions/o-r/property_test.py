@@ -91,7 +91,7 @@ class Person:
     # and delName methods
     name = property(getName, setName, delName, 'Name property')
 
-# Instead of using the property() method, you can use the Python decorator @property
+# Instead of using the property() method, you can use the python decorator @property
 # to assign the getter, setter and deleter.
 class Person_2:
     def __init__(self, name):

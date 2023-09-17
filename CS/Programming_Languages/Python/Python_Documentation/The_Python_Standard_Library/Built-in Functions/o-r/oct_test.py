@@ -1,10 +1,10 @@
 """oct(x)"""
 # https://www.programiz.com/python-programming/methods/built-in/oct
 
-"""Convert an integer number to an octal string prefixed with “0o”. The result is a valid Python expression.
-If x is not a Python int object, it has to define an __index__() method that returns an integer."""
+"""Convert an integer number to an octal string prefixed with “0o”. The result is a valid python expression.
+If x is not a python int object, it has to define an __index__() method that returns an integer."""
 
-# Example 1: How oct() works in Python?
+# Example 1: How oct() works in python?
 # decimal number
 print('oct(10) is:', oct(10))
 

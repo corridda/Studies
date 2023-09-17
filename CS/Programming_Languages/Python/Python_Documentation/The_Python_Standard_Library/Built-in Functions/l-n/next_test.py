@@ -11,7 +11,7 @@ random = [5, 9, 'cat']
 print(f"random: {random}")
 
 # converting list to iterator
-# A list is an iterable and you can get iterator from it by using iter() function in Python.
+# A list is an iterable and you can get iterator from it by using iter() function in python.
 randomIterator = iter(random)
 print(f"randomIterator: {randomIterator}")
 

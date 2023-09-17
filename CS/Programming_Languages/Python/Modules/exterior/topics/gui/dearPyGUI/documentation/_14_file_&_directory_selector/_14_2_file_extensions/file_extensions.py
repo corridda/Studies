@@ -13,7 +13,7 @@ with dpg.file_dialog(directory_selector=False, show=False, callback=callback, id
     dpg.add_file_extension("", color=(150, 255, 150, 255))
     dpg.add_file_extension("Source files (*.cpp *.h *.hpp){.cpp,.h,.hpp}", color=(0, 255, 255, 255))
     dpg.add_file_extension(".h", color=(255, 0, 255, 255), custom_text="[header]")
-    dpg.add_file_extension(".py", color=(0, 255, 0, 255), custom_text="[Python]")
+    dpg.add_file_extension(".py", color=(0, 255, 0, 255), custom_text="[python]")
 
 with dpg.window(label="Tutorial", width=800, height=300):
     dpg.add_button(label="File Selector", callback=lambda: dpg.show_item("file_dialog_id"))

@@ -1,1 +1,1 @@
-"""logging — Logging facility for Python"""
+"""logging — Logging facility for python"""

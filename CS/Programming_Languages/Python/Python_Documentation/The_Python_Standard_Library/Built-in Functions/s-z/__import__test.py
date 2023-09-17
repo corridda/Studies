@@ -2,7 +2,7 @@
 # https://www.programiz.com/python-programming/methods/built-in/__import__
 
 """Note:
- This is an advanced function that is not needed in everyday Python programming, unlike importlib.import_module().
+ This is an advanced function that is not needed in everyday python programming, unlike importlib.import_module().
  It is rarely used and often discouraged.
  The function imports the module name, potentially using the given globals and locals to determine
  how to interpret the name in a package context. The fromlist gives the names of objects or submodules

@@ -1,5 +1,5 @@
 """Related links:
-Python RSA Brute Force Check
+python RSA Brute Force Check
 https://stackoverflow.com/questions/28254910/python-rsa-brute-force-check
 """
 

@@ -8,10 +8,10 @@ the iterator protocol:
     iterator.__iter__()
 Return the iterator object itself. This is required to allow both containers and iterators to be used
 with the for and in statements. This method corresponds to the tp_iter slot of the type structure for
-Python objects in the Python/C API.
+python objects in the python/C API.
     iterator.__next__()
 Return the next item from the container. If there are no further items, raise the StopIteration exception.
-This method corresponds to the tp_iternext slot of the type structure for Python objects in the Python/C API.
+This method corresponds to the tp_iternext slot of the type structure for python objects in the python/C API.
 """
 
 
@@ -62,7 +62,7 @@ for el in inst_B:
 print()
 
 
-"""Python’s generators provide a convenient way to implement the iterator protocol.
+"""python’s generators provide a convenient way to implement the iterator protocol.
 If a container object’s __iter__() method is implemented as a generator, it will automatically return
 an iterator object (technically, a generator object) supplying the __iter__() and __next__() methods.
 More information about generators can be found in the documentation for the yield expression."""

@@ -29,7 +29,7 @@ def main():
     print(f"any(list_3): {any(list_3)}\n")
 
 
-    # How any() works with Python Strings?
+    # How any() works with python Strings?
     s = "This is good"
     print(f"s: {s}")
     print(f"any(s): {any(s)}\n")
@@ -45,7 +45,7 @@ def main():
     print(f"any(s): {any(s)}\n")
 
 
-    # How any() works with Python Dictionaries?
+    # How any() works with python Dictionaries?
     """In case of dictionaries, if all keys (not values) are false, any() returns False.
     If at least one key is true, any() returns True."""
     d = {0: 'False'}

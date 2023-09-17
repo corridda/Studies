@@ -4,7 +4,7 @@
 """
     Execute the given source in the context of globals and locals.
     
-    The source may be a string representing one or more Python statements
+    The source may be a string representing one or more python statements
     or a code object as returned by compile().
     The globals must be a dictionary and locals can be any mapping,
     defaulting to the current globals and locals.

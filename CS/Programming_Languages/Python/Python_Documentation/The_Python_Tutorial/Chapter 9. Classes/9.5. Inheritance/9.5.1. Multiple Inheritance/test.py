@@ -1,4 +1,4 @@
-# Python supports a form of multiple inheritance as well
+# python supports a form of multiple inheritance as well
 
 class A():
     in_A = 'A'

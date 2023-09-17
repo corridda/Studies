@@ -3,7 +3,7 @@
 import sys, math
 from fractions import Fraction
 
-"""The value of P is made available to Python as the modulus attribute of sys.hash_info."""
+"""The value of P is made available to python as the modulus attribute of sys.hash_info."""
 print(sys.hash_info, '\n')
 
 

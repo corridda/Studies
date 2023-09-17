@@ -29,7 +29,7 @@ prefix = 'Py'
 print(prefix + 'thon')
 
 # Strings can be indexed (subscripted), with the first character having index 0.
-word = 'Python'
+word = 'python'
 print(word[0] + word[1] + word[2] + word[3] + word[4] + word[5])
 
 # Indices may also be negative numbers, to start counting from the right.
@@ -62,7 +62,7 @@ except IndexError:
 print(word[4:42])
 print(word[42:])
 
-# Python strings cannot be changed — they are immutable.
+# python strings cannot be changed — they are immutable.
 # Therefore, assigning to an indexed position in the string results in an error:
 try:
       word[0] = 'J'

@@ -54,7 +54,7 @@ print()
 
 
 
-# range() is a type in Python:
+# range() is a type in python:
 print(f"type(range(3): {type(range(3))}")
 
 # You can access items in a range() by index, just as you would with a list:

@@ -2,7 +2,7 @@
 # https://www.programiz.com/python-programming/methods/built-in/bin
 
 """Convert an integer number to a binary string prefixed with “0b”.
-The result is a valid Python expression. If x is not a Python int object, it has to define an __index__() method
+The result is a valid python expression. If x is not a python int object, it has to define an __index__() method
 that returns an integer. Some examples:"""
 
 

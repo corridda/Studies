@@ -12,7 +12,7 @@ For example, 10 ** 2 returns 100, but 10 ** -2 returns 0.unit_01. If the second 
 the third argument must be omitted. If z is present, x and y must be of integer types, and y must be non-negative.
 """
 
-# Example 1: How pow() works in Python?
+# Example 1: How pow() works in python?
 
 # positive x, positive y (x**y)
 print(f"pow(2, 2): {pow(2, 2)}")

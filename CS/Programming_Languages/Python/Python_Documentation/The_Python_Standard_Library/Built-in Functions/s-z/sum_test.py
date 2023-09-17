@@ -8,7 +8,7 @@ a sequence of strings is by calling ''.join(sequence). To add floating point val
 see math.fsum(). To concatenate a series of iterables, consider using itertools.chain().
 """
 
-# Example: How sum() function works in Python?
+# Example: How sum() function works in python?
 
 numbers = [2.5, 3, 4, -5]
 

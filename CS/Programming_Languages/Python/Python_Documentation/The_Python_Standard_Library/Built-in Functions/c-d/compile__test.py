@@ -8,7 +8,7 @@
 
 """Here, the source is in normal string form. The filename is 'sumstring'.
 And, the exec mode later allows the use of exec() method.
-The compile() method converts the string to Python code object.
+The compile() method converts the string to python code object.
 The code object is then executed using exec() method."""
 
 def main():

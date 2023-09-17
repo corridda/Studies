@@ -1,6 +1,6 @@
 """https://t.me/pythonetc/235"""
 
-"""In Python, you can create a callable object not only by creating functions (with def or lambda).
+"""In python, you can create a callable object not only by creating functions (with def or lambda).
 An object is also callable if it has the __call__ magic method:"""
 
 class truncater:

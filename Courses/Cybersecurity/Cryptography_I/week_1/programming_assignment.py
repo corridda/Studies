@@ -50,7 +50,7 @@ For completeness, here is the python script used to generate the ciphertexts.
 (it doesn't matter if you can't read this)
 """
 
-from CS.Programming_Languages.Python.Projects.Cryptography.simple_password_generator import get_password
+from cs.programming_languages.python.Projects.Cryptography.simple_password_generator import get_password
 from pprint import pprint
 
 MSGS = (get_password(1024) for _ in range(5))

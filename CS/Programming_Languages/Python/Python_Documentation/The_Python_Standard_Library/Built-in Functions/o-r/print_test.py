@@ -17,9 +17,9 @@ the stream is forcibly flushed.
 """
 
 
-# Example 1: How print() works in Python?
+# Example 1: How print() works in python?
 
-print("Python is fun.")
+print("python is fun.")
 
 a = 5
 # Two objects are passed
@@ -49,7 +49,7 @@ print()
 
 # Example 3: print() with file parameter
 
-# In Python, you can print objects to the file by specifying the file parameter.
+# In python, you can print objects to the file by specifying the file parameter.
 sourceFile = open('python.txt', 'w')
 print('Pretty cool, huh!', file = sourceFile)
 sourceFile.close()

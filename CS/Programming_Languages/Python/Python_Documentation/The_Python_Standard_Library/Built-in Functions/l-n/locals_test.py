@@ -16,16 +16,16 @@ There are mainly two kinds of symbol table.
 -> Local symbol table
 
 A Global symbol table stores all information related to the global scope of the program, and is accessed
-in Python using globals() method.
+in python using globals() method.
 The global scope contains all functions, variables which are not associated to any class or function.
 
 Likewise, Local symbol table stores all information related to the local scope of the program,
-and is accessed in Python using locals() method.
+and is accessed in python using locals() method.
 The local scope could be within a function, within a class, etc. """
 
 from pprint import pprint
 
-# Example 1: How locals() works in Python?
+# Example 1: How locals() works in python?
 print(f"locals():")
 pprint(locals())
 print()

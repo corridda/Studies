@@ -5,7 +5,7 @@ from multiprocessing import Pool
 
 import psutil
 
-# ray requires >= Python 3.6 and <= Python 3.8 (status: 2020-10-11)
+# ray requires >= python 3.6 and <= python 3.8 (status: 2020-10-11)
 # import ray
 
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes

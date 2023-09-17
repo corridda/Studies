@@ -34,11 +34,11 @@ print()
 testString = ''
 print('Length of', testString, 'is', len(testString))
 
-testString = 'Python'
+testString = 'python'
 print('Length of', testString, 'is', len(testString))
 
 # byte object
-testByte = b'Python'
+testByte = b'python'
 print('Length of', testByte, 'is', len(testByte))
 
 testList = [1, 2, 3]

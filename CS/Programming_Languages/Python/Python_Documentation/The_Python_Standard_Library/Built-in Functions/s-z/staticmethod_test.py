@@ -5,7 +5,7 @@
 The syntax of staticmethod() is:
     staticmethod(function)
 Using staticmethod() is considered un-Pythonic way of creating a static function.
-So, in newer versions of Python, you can use the Python decorator @staticmethod.
+So, in newer versions of python, you can use the python decorator @staticmethod.
 The syntax of @staticmethod is:
     @staticmethod
     def func(args, ...)

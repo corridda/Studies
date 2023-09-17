@@ -16,14 +16,14 @@ is obtained before calling bytes.decode(). See Binary Sequence Types — bytes, 
 memoryview and Buffer Protocol for information on buffer objects.
 
 Passing a bytes object to str() without the encoding or errors arguments falls
-under the first case of returning the informal string representation (see also the -b command-line option to Python).
+under the first case of returning the informal string representation (see also the -b command-line option to python).
 For example:
     >>> str(b'Zoot!')
     "b'Zoot!'"
 """
 
 
-# Example 1: How str() works in Python?
+# Example 1: How str() works in python?
 
 """If encoding and errors parameter isn't provided, str() method internally calls __str__() method of an object.
 If it cannot find the __str__() method, it instead calls repr(obj)."""

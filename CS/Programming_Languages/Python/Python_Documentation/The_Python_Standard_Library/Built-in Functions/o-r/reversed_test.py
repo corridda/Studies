@@ -10,7 +10,7 @@ starting at 0) such as tuple, string, list or range."""
 # Example 1: How reversed works for a sequence: string, tuple, list and range?
 
 # for string
-seqString = 'Python'
+seqString = 'python'
 print(list(reversed(seqString)))
 
 # for tuple

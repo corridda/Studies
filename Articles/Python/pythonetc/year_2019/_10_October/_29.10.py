@@ -1,6 +1,6 @@
 """https://t.me/pythonetc/502"""
 
-"""In Python 3, once the except block is exited, the variables that store caught exceptions are removed
+"""In python 3, once the except block is exited, the variables that store caught exceptions are removed
 from locals() even if they previously existed:"""
 
 e = 2

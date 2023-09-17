@@ -6,7 +6,7 @@
 """Return a slice object representing the set of indices specified by range(start, stop, step).
 The start and step arguments default to None. Slice objects have read-only data attributes start, stop
 and step which merely return the argument values (or their default).
-They have no other explicit functionality; however they are used by Numerical Python
+They have no other explicit functionality; however they are used by Numerical python
 and other third party extensions. Slice objects are also generated when extended indexing syntax is used.
 For example: a[start:stop:step] or a[start:stop, i]. See itertools.islice() for an alternate version
 that returns an iterator.
@@ -28,7 +28,7 @@ print(f"slice(1, 5, 2): {slice(1, 5, 2)}\n")
 
 # Example 2: Get substring from a given string using slice object
 
-pyString = 'Python'
+pyString = 'python'
 
 # contains indices (0, 1, 2)
 # i.e. P, y and t
@@ -102,7 +102,7 @@ print(f"pyTuple[sObject]: {pyTuple[sObject]}\n")
 
 # Example 6: Get substring from a given string by extending indexing syntax
 
-"""The slice object can be substituted with the indexing syntax in Python.
+"""The slice object can be substituted with the indexing syntax in python.
 You can alternately use the following syntax for slicing:
 obj[start:stop:step]"""
 

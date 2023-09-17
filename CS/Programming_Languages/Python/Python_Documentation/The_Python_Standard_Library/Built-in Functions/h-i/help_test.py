@@ -14,6 +14,6 @@ print(f"help('random thing'): {help('random thing')}\n")
 print(f"help('def'): {help('def')}\n")
 print(f"help('math.pow'): {help('math.pow')}\n")
 
-# If no argument is passed, Python's help utility (interactive help system) starts on the console.
+# If no argument is passed, python's help utility (interactive help system) starts on the console.
 # To quit the help utility and return to the interpreter, you need to type quit and press enter.
 help()

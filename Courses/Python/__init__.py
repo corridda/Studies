@@ -1,1 +1,1 @@
-"""Python courses"""
+"""python courses"""

@@ -8,7 +8,7 @@ to the power minus 'ndigits'; if two multiples are equally close, rounding is do
 (so, for example, both round(0.5) and round(-0.5) are 0, and round(1.5) is 2).
 Any integer value is valid for 'ndigits' (positive, zero, or negative). The return value is an integer
 if 'ndigits' is omitted or None. Otherwise the return value has the same type as number.
-For a general Python object number, round delegates to number.__round__.
+For a general python object number, round delegates to number.__round__.
 
 Note:
 The behavior of round() for floats can be surprising: for example, round(2.675, 2) gives 2.67
@@ -17,7 +17,7 @@ can’t be represented exactly as a float. See Floating Point Arithmetic: Issues
  """
 
 
-# Example 1: How round() works in Python?
+# Example 1: How round() works in python?
 
 # for integers
 print(f"round(10): {round(10)}")

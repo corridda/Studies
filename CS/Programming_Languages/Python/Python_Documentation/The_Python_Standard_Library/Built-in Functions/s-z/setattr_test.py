@@ -6,7 +6,7 @@ The string may name an existing attribute or a new attribute. The function assig
 provided the object allows it. For example, setattr(x, 'foobar', 123) is equivalent to x.foobar = 123."""
 
 
-# Example 1: How setattr() works in Python?
+# Example 1: How setattr() works in python?
 
 class Person:
     name = 'Adam'

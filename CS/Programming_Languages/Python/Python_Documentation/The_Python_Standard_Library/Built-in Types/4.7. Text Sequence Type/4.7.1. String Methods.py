@@ -38,7 +38,7 @@ print('unit_01\t012\t0123\t01234'.expandtabs(4), '\n')
 """Note:
  The find() method should be used only if you need to know the position of sub.
  To check if sub is a substring or not, use the in operator:"""
-print(f"'Py' in 'Python': {'Py' in 'Python'}")
+print(f"'Py' in 'python': {'Py' in 'python'}")
 print(f"str.find('abc-dvd-abc-vdv-abc-dvd', 'vdv'): {str.find('abc-dvd-abc-vdv-abc-dvd', 'vdv')}")
 print(f"str.find('abc-dvd-abc-vdv-abc-dvd', 'abs'): {str.find('abc-dvd-abc-vdv-abc-dvd', 'abs')}\n")
 

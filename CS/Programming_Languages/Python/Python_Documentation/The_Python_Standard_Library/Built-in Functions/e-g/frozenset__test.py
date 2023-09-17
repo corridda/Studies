@@ -7,7 +7,7 @@ fz = frozenset([1, 2 ,3 ,4, 5])
 print(f"{fz}")
 print(f"type(fz): {type(fz)}")
 
-"""Frozen set is just an immutable version of a Python set object.
+"""Frozen set is just an immutable version of a python set object.
 While elements of a set can be modified at any time, elements of frozen set remains the same after creation."""
 try:
     fz.add([6, 7 , 8])
@@ -15,7 +15,7 @@ except AttributeError as e:
     print(repr(e))
 print()
 
-# Example 1: How frozenset() works in Python?
+# Example 1: How frozenset() works in python?
 # tuple of vowels
 vowels = ('a', 'e', 'i', 'o', 'u')
 

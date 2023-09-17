@@ -19,7 +19,7 @@ t2 = tuple([1, 4, 6])
 print('t2=', t2)
 
 # creating a tuple from a string
-t1 = tuple('Python')
+t1 = tuple('python')
 print('t1=',t1)
 
 # creating a tuple from a dictionary

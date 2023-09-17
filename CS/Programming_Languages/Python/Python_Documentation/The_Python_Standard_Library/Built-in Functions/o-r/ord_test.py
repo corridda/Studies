@@ -5,7 +5,7 @@
 of that character. For example, ord('a') returns the integer 97 and ord('Ђ') (Euro sign) returns 8364.
 This is the inverse of chr()."""
 
-# Example 1: How ord() works in Python?
+# Example 1: How ord() works in python?
 # code point of integer
 print(f"ord('5'): {ord('5')}")
 

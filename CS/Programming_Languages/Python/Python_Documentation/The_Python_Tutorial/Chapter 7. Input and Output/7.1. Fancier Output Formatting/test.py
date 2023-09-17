@@ -14,7 +14,7 @@ y = 200 * 200
 s = 'The value of x is ' + repr(x) + ', and y is ' + repr(y) + '...'
 print(s)
 
-# The argument to repr() may be any Python object:
+# The argument to repr() may be any python object:
 print(repr((x, y, ('spam', 'eggs'))))
 print(repr([1, 2, 3, 4, 5]), '\n')
 

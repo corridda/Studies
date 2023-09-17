@@ -24,7 +24,7 @@ print(f"x == list(x2) and y == list(y2): {x == list(x2) and y == list(y2)}\n")
 
 
 
-# Example 1: How zip() works in Python?
+# Example 1: How zip() works in python?
 
 numberList = [1, 2, 3]
 strList = ['one', 'two', 'three']

@@ -26,7 +26,7 @@ class PrintNumber:
 
 
 
-# Example 1: How iter() works in Python?
+# Example 1: How iter() works in python?
 
 # list of vowels
 vowels = ['a', 'e', 'i', 'o', 'u']

@@ -20,7 +20,7 @@ pyList = ['e', 'a', 'u', 'o', 'i']
 print(f"sorted(pyList): {sorted(pyList)}")
 
 # string
-pyString = 'Python'
+pyString = 'python'
 print(f"sorted(pyString): {sorted(pyString)}")
 
 # vowels tuple

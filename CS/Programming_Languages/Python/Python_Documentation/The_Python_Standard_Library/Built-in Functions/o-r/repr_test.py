@@ -9,7 +9,7 @@ often including the name and address of the object. A class can control what thi
 for its instances by defining a __repr__() method."""
 
 
-# Example 1: How repr() works in Python?
+# Example 1: How repr() works in python?
 """It is important to that 'foo' is a string so it's represented by the single quotes.
 'foo' without the quotes would assign var to foo variable."""
 var = 'foo'

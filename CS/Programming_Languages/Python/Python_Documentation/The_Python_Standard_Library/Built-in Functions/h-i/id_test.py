@@ -28,6 +28,6 @@ print('id of b =',id(b))
 c = 5.0
 print('id of c =',id(c))
 
-"""It's important to note that everything in Python is an object, even numbers and Classes.
+"""It's important to note that everything in python is an object, even numbers and Classes.
 Hence, integer 5 has a unique id. The id of the integer 5 remains constant during the lifetime.
 Similar is the case for float 5.5 and other objects."""

@@ -5,7 +5,7 @@
 but escape the non-ASCII characters in the string returned by repr() using \\x, \\u or \\U escapes."""
 
 def main():
-    normalText = 'Python is interesting'
+    normalText = 'python is interesting'
     print(ascii(normalText))
 
     otherText = 'Pythön is interesting'
@@ -13,7 +13,7 @@ def main():
 
     print('Pyth\xf6n is interesting\n')
 
-    randomList = ['Python', 'Pythön', 5]
+    randomList = ['python', 'Pythön', 5]
     print(f"ascii(randomList): {ascii(randomList)}")
     print(f"repr(randomList): {repr(randomList)}")
 

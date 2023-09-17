@@ -7,7 +7,7 @@ See Memory Views for more information."""
 
 
 
-# Example 1: How memoryview() works in Python?
+# Example 1: How memoryview() works in python?
 
 #random bytearray
 randomByteArray = bytearray('ABC', 'utf-8')

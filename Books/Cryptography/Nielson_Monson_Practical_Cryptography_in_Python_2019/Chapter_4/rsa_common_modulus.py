@@ -51,7 +51,7 @@ def simple_rsa_decrypt(c, privatekey):
 
 
 def int_to_bytes(i):
-    # i might be a gmpy2 big integer; convert back to a Python int
+    # i might be a gmpy2 big integer; convert back to a python int
     i = int(i)
     return i.to_bytes((i.bit_length() + 7) // 8, byteorder='big')
 

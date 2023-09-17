@@ -28,7 +28,7 @@ print(f"bytearray(b'def-abcdef-abcdef-abc-abc-def').find(b'abc'): "
       f"{bytearray(b'def-abcdef-abcdef-abc-abc-def').find(b'abc')}\n")
 """Note: The find() method should be used only if you need to know the position of sub.
 To check if sub is a substring or not, use the in operator:"""
-print(f"b'Py' in b'Python': {b'Py' in b'Python'}\n")
+print(f"b'Py' in b'python': {b'Py' in b'python'}\n")
 
 
 """bytes.index(sub[, start[, end]])

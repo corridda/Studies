@@ -61,7 +61,7 @@ o2 = type('Y', (test,), dict(a='Foo', b=12))
 print(f"type(o2): {type(o2)}")
 print(f"vars(o2): {vars(o2)}")
 
-"""In the program, we have used Python vars() function return the __dict__ attribute. __dict__ is used
+"""In the program, we have used python vars() function return the __dict__ attribute. __dict__ is used
 to store object's writable attributes.
 
 You can easily change these attributes if necessary. For example, if you need to change __name__ attribute

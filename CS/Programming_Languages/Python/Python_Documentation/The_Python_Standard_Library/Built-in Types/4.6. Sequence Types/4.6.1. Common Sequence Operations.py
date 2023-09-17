@@ -59,7 +59,7 @@ print(f"Euro* 5: {'Euro*' * 5}")
 
 """2.Values of n less than 0 are treated as 0 (which yields an empty sequence of the same type as s).
 Note that items in the sequence s are not copied; they are referenced multiple times.
-This often haunts new Python programmers; consider:"""
+This often haunts new python programmers; consider:"""
 lists = [[]] * 3
 print(f"lists: {lists}")
 lists[0].append(3)

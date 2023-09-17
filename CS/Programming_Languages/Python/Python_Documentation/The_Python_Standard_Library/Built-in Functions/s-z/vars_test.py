@@ -24,7 +24,7 @@ InstanceOfFoo = Foo()
 print(f"vars(InstanceOfFoo): {vars(InstanceOfFoo)}\n")
 
 
-"""Also, run these statements on Python shell:
+"""Also, run these statements on python shell:
 >>> vars(list)
 >>> vars(str)
 >>> vars(dict)"""

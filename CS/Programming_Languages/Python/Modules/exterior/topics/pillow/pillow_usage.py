@@ -1,4 +1,4 @@
-"""Основные возможности библиотеки Python Imaging Library / Pillow / PIL
+"""Основные возможности библиотеки python Imaging Library / Pillow / PIL
 https://pythonru.com/biblioteki/osnovnye-vozmozhnosti-biblioteki-python-imaging-library-pillow-pil
 """
 

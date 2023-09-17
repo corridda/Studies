@@ -9,7 +9,7 @@ def main():
     print(f"bytearray(5): {bytearray(5)}")
     print(f"bytearray([0,1,2,3,4,5]): {bytearray([0,1,2,3,4,5])}\n")
 
-    s = 'Python is interesting.'
+    s = 'python is interesting.'
     bytes_string = bytearray(s, encoding='utf-8')
     print(f"bytes_string: {bytes_string}")
     print(f"type(bytes_string[0]): {type(bytes_string[0])}")

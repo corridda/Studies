@@ -1,7 +1,7 @@
 """https://t.me/pythonetc/232"""
 
 """Creating a new variable is essentially creating a new name for an already existing object.
-That's why it's called name binding in Python.
+That's why it's called name binding in python.
 There are numerous ways to bind names, these are the examples of how x can be bind:"""
 
 """

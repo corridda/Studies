@@ -1,6 +1,6 @@
 """https://t.me/pythonetc/233"""
 
-"""Objects in Python store their attributes in dictionaries that can be accessed by __dict__ magic attribute:"""
+"""Objects in python store their attributes in dictionaries that can be accessed by __dict__ magic attribute:"""
 
 
 class A:
@@ -11,7 +11,7 @@ a = A()
 a.x = 1
 print(f"a.__dict__: {a.__dict__}")
 
-"""By direct accessing it you can even create attributes that are not Python identifiers
+"""By direct accessing it you can even create attributes that are not python identifiers
 (which means you can't get them with a standard obj.attr syntax):"""
 
 a.__dict__[' '] = 'empty'
@@ -19,7 +19,7 @@ print(f"a.__dict__: {a.__dict__}")
 print(f"getattr(a, ' '): {getattr(a, ' ')}\n")
 
 
-"""You can also ask Python to store attributes directly in memory (like a simple C struct) using __slots__.
+"""You can also ask python to store attributes directly in memory (like a simple C struct) using __slots__.
 It will save some memory and some CPU cycles that are used for dictionary lookups."""
 
 

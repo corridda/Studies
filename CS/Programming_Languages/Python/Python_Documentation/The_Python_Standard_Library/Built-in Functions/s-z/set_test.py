@@ -15,7 +15,7 @@ For other containers see the built-in frozenset, list, tuple, and dict classes, 
 print(f"set(): {set()}")
 
 # from string
-print(f"set('Python'): {set('Python')}")
+print(f"set('python'): {set('python')}")
 
 # from tuple
 print(f"set(('a', 'e', 'i', 'o', 'u')): {set(('a', 'e', 'i', 'o', 'u'))}")

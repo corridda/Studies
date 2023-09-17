@@ -2,7 +2,7 @@
 # https://www.programiz.com/python-programming/methods/built-in/object
 
 """Return a new featureless object. object is a base for all classes.
-It has the methods that are common to all instances of Python classes. This function does not accept any arguments.
+It has the methods that are common to all instances of python classes. This function does not accept any arguments.
 Note: object does not have a __dict__, so you can’t assign arbitrary attributes to an instance of the object class.
 """
 
