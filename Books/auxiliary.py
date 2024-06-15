@@ -26,7 +26,7 @@ def is_prime(n: int) -> bool:
 
 
 def get_next_prime(prev: int):
-    """Get the next prime number that follows immediatly after the given one.
+    """Get the next prime number that follows immediately after the given one.
 
     :param prev: the previous prime number
     :returns: next prime number
