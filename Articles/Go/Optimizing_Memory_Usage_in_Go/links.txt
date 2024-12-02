@@ -1,0 +1,3 @@
+Optimizing Memory Usage in Go: Mastering Data Structure Alignment
+https://dev.to/yanev/optimizing-memory-usage-in-go-mastering-data-structure-alignment-4beb
+

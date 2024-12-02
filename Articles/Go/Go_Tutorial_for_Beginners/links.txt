@@ -1,0 +1,2 @@
+Самоучитель по Go для начинающих
+https://proglib.io/p/samouchitel-po-go-dlya-nachinayushchih-chast-1-osobennosti-i-sfera-primeneniya-go-ustanovka-nastroyka-2023-11-23
